@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -5,22 +10,37 @@ body {
     padding: 0;
 }
 
-
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    
 }
+
+
 th, td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid black;
     background-color: var(--color-7);
+  
+
 }
-th {
-    background-color: rgb(235, 109, 109);
+th, td:hover
+{
+
+    
+
 }
 
+th {
+    background-color: rgb(235, 109, 109);
+    transition: transform 0.5s ease;
+}
+th:hover{
+
+    transform: translateX(100px);
+}
 
 .card {
     padding: 20px;
@@ -31,64 +51,86 @@ th {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     color: black;
-
 }
+
+.card1 {
+    background-color: var(--color-3);
+    color: green;
+}
+
 .card--invertida {
     background-color: #333;
     color: white;
+    transition: text-shadow 0.5s ease;
+    
 }
+.card--invertida:hover{
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+.card--invertida:hover .card-text{
+
+    transform: translateX(10px);
+
+}
+
 .card--exito {
     background-color: #78ef94;
     color: #155724;
+    transition: filter 0.5s ease;
 }
+
 .card--advertencia {
     background-color: #fff3cd;
     color: #856404;
+    transition: filter 0.5s ease;
+
 }
+
 .card:hover {
+    transform: scale(1.05) rotate(3deg);
+    color: var(--color-7);
+    background-color: var(--color-5);
+}
+
+.card:active {
+    transform: scale(0.95) rotate(-3deg);
+}
+.card--advertencia:hover {
+    background-color: var(--color-2);
+    color: white;
+    filter: blur(5px);
+}
+.card--exito:hover {
+    background-color: var(--color-7);
+    color: black;
+    filter: invert(1);
+}
+.card1:hover {
+    background-color: aqua;
+    color: black;
     transform: scale(1.05);
 }
-.card:active {
-    transform: scale(0.95);
-}
-.card1{
-
-    padding: 20px;
-    margin: 10px 0;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    color: black;
-    background-color: var(--color-3);
-}
-.card1:hover{
-
-background-color: aqua;
-color: black;
-
-}
-
-
 section {
     padding: 20px;
     margin: 20px 0;
     border: 1px solid var(--color-3);
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: var();
 }
 
 
-.section--invertida {
-    background-color: var(--color-6);
-}
+
 .section--advertencia {
     background-color: var(--color-7);
     color: var(--color-2);
 }
+
 section:hover {
-    background-color:var(--color-9);
+    background-color: var(--color-9);
 }
+
 section:active {
     transform: rotate(3deg);
 }
@@ -102,89 +144,213 @@ section:active {
     border-radius: 5px;
     transition: all 0.3s ease;
 }
+
 .quote--invertida {
     background-color: #333;
     color: var(--color-7);
     border-left-color: #555;
+    transition: transform 0.5s ease;
 }
+
 .quote--exito {
     background-color: var(--color-1);
     color: var(--color-7);
     border-left-color: #c3e6cb;
+    transition: transform 0.5s ease;
 }
+
 .quote--advertencia {
-    background-color:var(--color-6);
+    background-color: var(--color-6);
     color: var(--color-7);
     border-left-color: #ffeeba;
+    transition: transform 0.5s ease;
 }
+
 .quote:hover {
     background-color: var(--color-6);
 }
+
 .quote:active {
     transform: skewX(-3deg);
 }
 
-:root{
-
---color-1:blue;
---color-2:red;
---color-3:yellow;
---color-4:green;
---color-5:olive;
---color-6:violet;
---color-7:white;
---color-8:rgb(242, 173, 242);    
---color-9:rgb(126, 50, 126);
+.quote--advertencia:hover {
+    background-color: var(--color-4);
+    transform: rotate(45deg);
 }
 
-.quote--advertencia:hover{
-
-
-background-color: var(--color-4);
-
-}
-
-.quote--exito:hover{
-
+.quote--exito:hover {
     background-color: var(--color-5);
+    transform: translateX(100px);
 }
 
-
-.quote--invertida:hover{
-
-
+.quote--invertida:hover {
     background-color: var(--color-2);
+    transform: scale(1.5);
 }
-
-
 .quote:active:hover {
-    
     background-color: var(--color-3);
 }
 
-.citas{
-
-
+.citas {
     color: white;
 }
 
-.card:hover {
-
-color: var(--color-7);
-background-color: var(--color-5);
-
+:root {
+    --color-1: blue;
+    --color-2: red;
+    --color-3: yellow;
+    --color-4: green;
+    --color-5: olive;
+    --color-6: violet;
+    --color-7: white;
+    --color-8: rgb(242, 173, 242);
+    --color-9: rgb(126, 50, 126);
 }
 
-.card--advertencia:hover{
+.ELEMENTO{
 
-
-    background-color: var(--color-2);
-    color: white;
+margin: 0 auto;
+text-align: center;
+font-size: 30px;
 }
 
-.card--exito:hover{
+.Giovanni{
 
-background-color: var(--color-7);
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    transition: transform 0.5s ease;
+}
+.Giovanni:hover{
+
+    transform: translateX(100px);
+}
+.treinta{
+
+    transition: box-shadow 0.5s ease;
+
+}
+.treinta:hover{
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+}
+.san_fransisco{
+
+    transition: border-radius 0.5s ease;
+}
+
+.san_fransisco:hover{
+
+    border-radius: 50%;
+}
+.brayan{
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.brayan:hover{
+    width: 150px;
+    height: 150px;
+}
+.jeff{
+
+    transition: transform 0.5s ease;
+
+}
+.jeff:hover{
+
+
+    transform: rotate(45deg);
+
+}
+.treintacinco{
+
+    transition: transform 0.5s ease;
+
+}
+.treintacinco:hover{
+
+    transform: skewX(15deg);
+
+}
+.giron{
+    transition: transform 0.5s ease;
+
+
+}
+.giron:hover{
+    transform: translateY(50px);
+
+}
+.venticinco{
+
+    transition: transform 0.5s ease;
+}
+.venticinco:hover{
+
+    transform: scaleX(1.5);
+
+
+}
+.piedecuesta{
+
+    transition: transform 0.5s ease;
+
+}
+.piedecuesta:hover{
+
+    transform: skewY(15deg);
+    
+}
+.section_normal-invertida3{
+
+    background-color: var(--color-5);
+}
+.section_normal-invertida3:hover{
+
+    background-color: var(--color-1);
+    color: var(--color-7);
+}
+
+
+.section_section--invertida2{
+
+    background-color: var(--color-4);
+    color: var(--color-1);
+    transition: border 0.5s ease;
+}
+
+.section_section--invertida2:hover{
+
+background-color: var(--color-6);
 color: black;
-}
+border: 2px solid red;
 
+}
+.section_normal{
+
+
+    background-color: var(--color-1);
+    color: var(--color-7);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.section_normal:hover{
+
+background-color: var(--color-5);
+color: black;
+opacity: 0.8;
+transform: scale(1.05);
+
+}
+.section--invertida {
+    background-color: var(--color-6);
+    transition: text-shadow 0.5s ease;
+
+}
+.section--invertida:hover{
+
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--color-4);
+    color: var(--color-1);
+}
