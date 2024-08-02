@@ -1,356 +1,400 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
-
-th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid black;
-    background-color: var(--color-7);
-  
-
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid black;
+  background-color: var(--color-7);
 }
-th, td:hover
-{
 
-    
-
-}
+th,
+td:hover {}
 
 th {
-    background-color: rgb(235, 109, 109);
-    transition: transform 0.5s ease;
+  background-color: rgb(235, 109, 109);
+  transition: transform 0.5s ease;
 }
-th:hover{
 
-    transform: translateX(100px);
+th:hover {
+  transform: translateX(100px);
 }
 
 .card {
-    padding: 20px;
-    margin: 10px 0;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    color: black;
-}
-
-.card1 {
-    background-color: var(--color-3);
-    color: green;
-}
-
-.card--invertida {
-    background-color: #333;
-    color: white;
-    transition: text-shadow 0.5s ease;
-    
-}
-.card--invertida:hover{
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-
-}
-.card--invertida:hover .card-text{
-
-    transform: translateX(10px);
-
-}
-
-.card--exito {
-    background-color: #78ef94;
-    color: #155724;
-    transition: filter 0.5s ease;
-}
-
-.card--advertencia {
-    background-color: #fff3cd;
-    color: #856404;
-    transition: filter 0.5s ease;
-
+  padding: 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 2s ease;
+  color: black;
+  background-color: var(--color-8);
+  cursor: pointer;
 }
 
 .card:hover {
-    transform: scale(1.05) rotate(3deg);
-    color: var(--color-7);
-    background-color: var(--color-5);
+  background-color: var(--color-5);
+  color: var(--color-8);
+  border-radius: 70px;
+  cursor: pointer;
+}
+
+.card--invertida {
+  background-color: #333;
+  color: white;
+  transition: text-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+.card--invertida:hover {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  color: var(--color-3);
+  background-color: var(--color-5);
+  box-shadow: var(--color-4);
+  border-radius: 70px;
+  cursor: pointer;
+}
+
+.card--invertida:hover .card-text {
+  transform: translateX(10px);
+  color: var(--color-6);
+  border-radius: 70px;
+  cursor: pointer;
+  
+}
+
+.card--exito {
+  background-color: #78ef94;
+  color: #155724;
+  transition: filter 0.5s ease;
+  cursor: pointer;
+}
+
+.card--advertencia {
+  background-color: #fff3cd;
+  color: #856404;
+  transition: filter 2s ease;
+  box-shadow: var(--color-8);
+}
+
+.card:hover {
+  transform: scale(1) rotate(1deg);
+  color: var(--color-7);
+  background-color: var(--color-5);
+  cursor: pointer;
 }
 
 .card:active {
-    transform: scale(0.95) rotate(-3deg);
+  transform: scale(0.95) rotate(-3deg);
+  cursor: pointer;
 }
+
 .card--advertencia:hover {
-    background-color: var(--color-2);
-    color: white;
-    filter: blur(5px);
+  background-color: var(--color-2);
+  color: white;
+  filter: blur(5px);
+  border-radius: 70px
+  cursor: pointer;
 }
+
 .card--exito:hover {
-    background-color: var(--color-7);
-    color: black;
-    filter: invert(1);
+  background-color: var(--color-7);
+  color: black;
+  filter: invert(5);
+  border-radius: 70px;
+  cursor: pointer;
 }
+
 .card1:hover {
-    background-color: aqua;
-    color: black;
-    transform: scale(1.05);
+  background-color: aqua;
+  color: black;
+  transform: scale(1.05);
+  border-radius: 70px;
+  cursor: pointer;
 }
+
 section {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid var(--color-3);
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    background-color: var();
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid var(--color-3);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  background-color: var();
+   cursor: pointer;
+  
+
 }
-
-
 
 .section--advertencia {
-    background-color: var(--color-7);
-    color: var(--color-2);
+  background-color: var(--color-7);
+  color: var(--color-2);
+  cursor: pointer;
 }
 
 section:hover {
-    background-color: var(--color-9);
+  background-color: var(--color-9);
+  border-radius: 70px;
+  border-bottom: var(--color-6);
+  cursor: pointer;
 }
 
 section:active {
-    transform: rotate(3deg);
+  transform: rotate(3deg);
+  cursor: pointer;
 }
 
 .quote {
-    padding: 20px;
-    margin: 10px 0;
-    font-size: 16px;
-    border-left: 5px solid var(--color-4);
-    background-color: var(--color-5);
-    border-radius: 5px;
-    transition: all 0.3s ease;
+  padding: 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-left: 5px solid var(--color-4);
+  background-color: var(--color-5);
+  border-radius: 5px;
+  transition: all 0.6s ease;
+  cursor: pointer;
 }
 
-.quote--invertida {
-    background-color: #333;
-    color: var(--color-7);
-    border-left-color: #555;
-    transition: transform 0.5s ease;
+.quote__invertida {
+  background-color: #333;
+  color: var(--color-7);
+  border-left-color: #555;
+  cursor: pointer;
 }
 
-.quote--exito {
-    background-color: var(--color-1);
-    color: var(--color-7);
-    border-left-color: #c3e6cb;
-    transition: transform 0.5s ease;
+.quote__exito {
+  background-color: var(--color-1);
+  color: var(--color-7);
+  border-left-color: #c3e6cb;
+  cursor: pointer;
+
 }
 
-.quote--advertencia {
-    background-color: var(--color-6);
-    color: var(--color-7);
-    border-left-color: #ffeeba;
-    transition: transform 0.5s ease;
+.quote__advertencia {
+  background-color: var(--color-6);
+  color: var(--color-7);
+  border-left-color: #ffeeba;
+  transition: transform 10s ease;
+  cursor: pointer;
 }
 
 .quote:hover {
-    background-color: var(--color-6);
+  background-color: var(--color-6);
+  border-radius: 70px;
+  cursor: pointer;
 }
 
 .quote:active {
-    transform: skewX(-3deg);
+  transform: skewX(-3deg);
+  border-radius: 70px;
+  cursor: pointer;
 }
 
-.quote--advertencia:hover {
-    background-color: var(--color-4);
-    transform: rotate(45deg);
+.quote__advertencia:hover {
+  background-color: var(--color-4);
+  transform: rotate(45deg);
+  cursor: pointer;
 }
 
-.quote--exito:hover {
-    background-color: var(--color-5);
-    transform: translateX(100px);
+.quote__exito:hover {
+  background-color: var(--color-5);
+  transform: translateX(100px);
+  cursor: pointer;
 }
 
-.quote--invertida:hover {
-    background-color: var(--color-2);
-    transform: scale(1.5);
+.quote__invertida:hover {
+  background-color: var(--color-2);
+  transform: scale(1.5);
+  cursor: pointer;
 }
+
 .quote:active:hover {
-    background-color: var(--color-3);
+  background-color: var(--color-3);
+  cursor: pointer;
 }
 
 .citas {
-    color: white;
+  color: white;
 }
 
 :root {
-    --color-1: blue;
-    --color-2: red;
-    --color-3: yellow;
-    --color-4: green;
-    --color-5: olive;
-    --color-6: violet;
-    --color-7: white;
-    --color-8: rgb(242, 173, 242);
-    --color-9: rgb(126, 50, 126);
+  --color-1: blue;
+  --color-2: red;
+  --color-3: yellow;
+  --color-4: green;
+  --color-5: olive;
+  --color-6: violet;
+  --color-7: white;
+  --color-8: rgb(242, 173, 242);
+  --color-9: rgb(126, 50, 126);
 }
 
-.ELEMENTO{
-
-margin: 0 auto;
-text-align: center;
-font-size: 30px;
+.ELEMENTO {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
 }
 
-.Giovanni{
-
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    transition: transform 0.5s ease;
-}
-.Giovanni:hover{
-
-    transform: translateX(100px);
-}
-.treinta{
-
-    transition: box-shadow 0.5s ease;
-
-}
-.treinta:hover{
-
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-
-}
-.san_fransisco{
-
-    transition: border-radius 0.5s ease;
+.Giovanni {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  transition: transform 0.5s ease;
+  cursor: pointer;
 }
 
-.san_fransisco:hover{
-
-    border-radius: 50%;
-}
-.brayan{
-    transition: width 0.5s ease, height 0.5s ease;
+.Giovanni:hover {
+  transform: translateX(100px);
+  cursor: pointer;
 }
 
-.brayan:hover{
-    width: 150px;
-    height: 150px;
-}
-.jeff{
-
-    transition: transform 0.5s ease;
-
-}
-.jeff:hover{
-
-
-    transform: rotate(45deg);
-
-}
-.treintacinco{
-
-    transition: transform 0.5s ease;
-
-}
-.treintacinco:hover{
-
-    transform: skewX(15deg);
-
-}
-.giron{
-    transition: transform 0.5s ease;
-
-
-}
-.giron:hover{
-    transform: translateY(50px);
-
-}
-.venticinco{
-
-    transition: transform 0.5s ease;
-}
-.venticinco:hover{
-
-    transform: scaleX(1.5);
-
-
-}
-.piedecuesta{
-
-    transition: transform 0.5s ease;
-
-}
-.piedecuesta:hover{
-
-    transform: skewY(15deg);
-    
-}
-.section_normal-invertida3{
-
-    background-color: var(--color-5);
-}
-.section_normal-invertida3:hover{
-
-    background-color: var(--color-1);
-    color: var(--color-7);
+.treinta {
+  transition: box-shadow 0.5s ease;
+  cursor: pointer;
 }
 
-
-.section_section--invertida2{
-
-    background-color: var(--color-4);
-    color: var(--color-1);
-    transition: border 0.5s ease;
+.treinta:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  background-color: var(--color-1);
+  cursor: pointer;
 }
 
-.section_section--invertida2:hover{
+.san_fransisco {
+  transition: border-radius 0.5s ease;
+  cursor: pointer;
+}
 
-background-color: var(--color-6);
-color: black;
-border: 2px solid red;
+.san_fransisco:hover {
+  border-radius: 50%;
+  background-color: var(--color-4);
+  cursor: pointer;
+}
+
+.brayan {
+  transition: width 0.5s ease, height 0.5s ease;
+  cursor: pointer;
+}
+
+.brayan:hover {
+  width: 150px;
+  height: 150px;
+  border-radius: 70px;
+  border-bottom: var(--color-8);
+  cursor: pointer;
+}
+
+.jeff {
+  transition: transform 0.5s ease;
+}
+
+.jeff:hover {
+  transform: rotate(45deg);
+}
+
+.treintacinco {
+  transition: transform 0.5s ease;
+}
+
+.treintacinco:hover {
+  transform: skewX(15deg);
+}
+
+.giron {
+  transition: transform 0.5s ease;
+}
+
+.giron:hover {
+  transform: translateY(50px);
+}
+
+.venticinco {
+  transition: transform 0.5s ease;
+}
+
+.venticinco:hover {
+  transform: scaleX(1.5);
+  background-color: var(--color-5);
+}
+
+.piedecuesta {
+  transition: transform 0.5s ease;
+}
+
+.piedecuesta:hover {
+  transform: skewY(15deg);
+}
+
+.section_normal-invertida3 {
+  background-color: var(--color-5);
+}
+
+.section_normal-invertida3:hover {
+  background-color: var(--color-1);
+  color: var(--color-7);
+  border-radius: 70px;
+}
+
+.section_section--invertida2 {
+  background-color: var(--color-4);
+  color: var(--color-1);
+  transition: border 0.5s ease;
 
 }
-.section_normal{
 
-
-    background-color: var(--color-1);
-    color: var(--color-7);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+.section_section--invertida2:hover {
+  background-color: var(--color-6);
+  color: black;
+  border: 2px solid red;
+  border-radius: 70px;
 }
-.section_normal:hover{
 
-background-color: var(--color-5);
-color: black;
-opacity: 0.8;
-transform: scale(1.05);
-
-}
-.section--invertida {
-    background-color: var(--color-6);
-    transition: text-shadow 0.5s ease;
+.section_normal {
+  background-color: var(--color-1);
+  color: var(--color-7);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  border-top: none;
 
 }
-.section--invertida:hover{
 
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-    background-color: var(--color-4);
-    color: var(--color-1);
+.section_normal:hover {
+  background-color: var(--color-5);
+  color: black;
+  opacity: 0.8;
+  transform: scale(1.05);
+  border-radius: 70px;
+}
+
+.section__invertida {
+  background-color: var(--color-6);
+  transition: text-shadow 0.5s ease;
+}
+
+.section--invertida:hover {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: var(--color-4);
+  color: var(--color-1);
+  border-radius: 70px;
+}
+
+.section__p--negro {
+
+  color: black;
+
+
 }
