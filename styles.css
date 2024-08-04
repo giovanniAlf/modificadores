@@ -2,201 +2,196 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-table {
+  }
+  
+  .table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    
-}
-
-
-th, td {
+  }
+  
+  .table__cell,
+  .table__header {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid black;
     background-color: var(--color-7);
+  }
   
-
-}
-th, td:hover
-{
-
-    
-
-}
-
-th {
+  .table__header {
     background-color: rgb(235, 109, 109);
     transition: transform 0.5s ease;
-}
-th:hover{
-
+  }
+  
+  .table__header:hover {
     transform: translateX(100px);
-}
-
-.card {
+  }
+  
+  .card {
     padding: 20px;
     margin: 10px 0;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+    border-radius: 1px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 2s ease;
     color: black;
-}
-
-.card1 {
-    background-color: var(--color-3);
-    color: green;
-}
-
-.card--invertida {
+    background-color: var(--color-8);
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    background-color: var(--color-5);
+    color: var(--color-8);
+    border-radius: 70px;
+  }
+  
+  .card--invertida {
     background-color: #333;
     color: white;
     transition: text-shadow 0.5s ease;
-    
-}
-.card--invertida:hover{
+  }
+  
+  .card--invertida:hover {
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-
-}
-.card--invertida:hover .card-text{
-
+    color: var(--color-3);
+    background-color: var(--color-5);
+    box-shadow: var(--color-4);
+    border-radius: 70px;
+  }
+  
+  .card--invertida:hover .card__text {
     transform: translateX(10px);
-
-}
-
-.card--exito {
+    color: var(--color-6);
+    border-radius: 70px;
+  }
+  
+  .card--exito {
     background-color: #78ef94;
     color: #155724;
     transition: filter 0.5s ease;
-}
-
-.card--advertencia {
+  }
+  
+  .card--advertencia {
     background-color: #fff3cd;
     color: #856404;
-    transition: filter 0.5s ease;
-
-}
-
-.card:hover {
-    transform: scale(1.05) rotate(3deg);
-    color: var(--color-7);
-    background-color: var(--color-5);
-}
-
-.card:active {
-    transform: scale(0.95) rotate(-3deg);
-}
-.card--advertencia:hover {
+    transition: filter 2s ease;
+    box-shadow: var(--color-8);
+  }
+  
+  .card--advertencia:hover {
     background-color: var(--color-2);
     color: white;
     filter: blur(5px);
-}
-.card--exito:hover {
+    border-radius: 70px;
+  }
+  
+  .card--exito:hover {
     background-color: var(--color-7);
     color: black;
-    filter: invert(1);
-}
-.card1:hover {
+    filter: invert(5);
+    border-radius: 70px;
+  }
+  
+  .card1:hover {
     background-color: aqua;
     color: black;
     transform: scale(1.05);
-}
-section {
+    border-radius: 70px;
+  }
+  
+  .section {
     padding: 20px;
     margin: 20px 0;
     border: 1px solid var(--color-3);
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    background-color: var();
-}
-
-
-
-.section--advertencia {
+  }
+  
+  .section--advertencia {
     background-color: var(--color-7);
     color: var(--color-2);
-}
-
-section:hover {
+  }
+  
+  .section:hover {
     background-color: var(--color-9);
-}
-
-section:active {
+    border-radius: 70px;
+    border-bottom: var(--color-6);
+  }
+  
+  .section:active {
     transform: rotate(3deg);
-}
-
-.quote {
+  }
+  
+  .quote {
     padding: 20px;
     margin: 10px 0;
     font-size: 16px;
     border-left: 5px solid var(--color-4);
     background-color: var(--color-5);
     border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.quote--invertida {
+    transition: all 0.6s ease;
+  }
+  
+  .quote--invertida {
     background-color: #333;
     color: var(--color-7);
     border-left-color: #555;
-    transition: transform 0.5s ease;
-}
-
-.quote--exito {
+  }
+  
+  .quote--exito {
     background-color: var(--color-1);
     color: var(--color-7);
     border-left-color: #c3e6cb;
-    transition: transform 0.5s ease;
-}
-
-.quote--advertencia {
+  }
+  
+  .quote--advertencia {
     background-color: var(--color-6);
     color: var(--color-7);
     border-left-color: #ffeeba;
-    transition: transform 0.5s ease;
-}
-
-.quote:hover {
+    transition: transform 10s ease;
+  }
+  
+  .quote:hover {
     background-color: var(--color-6);
-}
-
-.quote:active {
+    border-radius: 70px;
+  }
+  
+  .quote:active {
     transform: skewX(-3deg);
-}
-
-.quote--advertencia:hover {
+    border-radius: 70px;
+  }
+  
+  .quote--advertencia:hover {
     background-color: var(--color-4);
     transform: rotate(45deg);
-}
-
-.quote--exito:hover {
+  }
+  
+  .quote--exito:hover {
     background-color: var(--color-5);
     transform: translateX(100px);
-}
-
-.quote--invertida:hover {
+  }
+  
+  .quote--invertida:hover {
     background-color: var(--color-2);
     transform: scale(1.5);
-}
-.quote:active:hover {
+  }
+  
+  .quote:active:hover {
     background-color: var(--color-3);
-}
-
-.citas {
+  }
+  
+  .citas {
     color: white;
-}
-
-:root {
+  }
+  
+  :root {
     --color-1: blue;
     --color-2: red;
     --color-3: yellow;
@@ -206,151 +201,146 @@ section:active {
     --color-7: white;
     --color-8: rgb(242, 173, 242);
     --color-9: rgb(126, 50, 126);
-}
-
-.ELEMENTO{
-
-margin: 0 auto;
-text-align: center;
-font-size: 30px;
-}
-
-.Giovanni{
-
+  }
+  
+  .elemento {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .elemento__giovanni {
     width: 100px;
     height: 100px;
     background-color: white;
     transition: transform 0.5s ease;
-}
-.Giovanni:hover{
-
+  }
+  
+  .elemento__giovanni:hover {
     transform: translateX(100px);
-}
-.treinta{
-
+  }
+  
+  .elemento__treinta {
     transition: box-shadow 0.5s ease;
-
-}
-.treinta:hover{
-
+  }
+  
+  .elemento__treinta:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-
-}
-.san_fransisco{
-
+    background-color: var(--color-1);
+  }
+  
+  .elemento__san-francisco {
     transition: border-radius 0.5s ease;
-}
-
-.san_fransisco:hover{
-
+  }
+  
+  .elemento__san-francisco:hover {
     border-radius: 50%;
-}
-.brayan{
+    background-color: var(--color-4);
+  }
+  
+  .elemento__brayan {
     transition: width 0.5s ease, height 0.5s ease;
-}
-
-.brayan:hover{
+  }
+  
+  .elemento__brayan:hover {
     width: 150px;
     height: 150px;
-}
-.jeff{
-
+    border-radius: 70px;
+    border-bottom: var(--color-8);
+  }
+  
+  .elemento__jeff {
     transition: transform 0.5s ease;
-
-}
-.jeff:hover{
-
-
+  }
+  
+  .elemento__jeff:hover {
     transform: rotate(45deg);
-
-}
-.treintacinco{
-
+  }
+  
+  .elemento__treintacinco {
     transition: transform 0.5s ease;
-
-}
-.treintacinco:hover{
-
+  }
+  
+  .elemento__treintacinco:hover {
     transform: skewX(15deg);
-
-}
-.giron{
+  }
+  
+  .elemento__giron {
     transition: transform 0.5s ease;
-
-
-}
-.giron:hover{
+  }
+  
+  .elemento__giron:hover {
     transform: translateY(50px);
-
-}
-.venticinco{
-
+  }
+  
+  .elemento__venticinco {
     transition: transform 0.5s ease;
-}
-.venticinco:hover{
-
+  }
+  
+  .elemento__venticinco:hover {
     transform: scaleX(1.5);
-
-
-}
-.piedecuesta{
-
-    transition: transform 0.5s ease;
-
-}
-.piedecuesta:hover{
-
-    transform: skewY(15deg);
-    
-}
-.section_normal-invertida3{
-
     background-color: var(--color-5);
-}
-.section_normal-invertida3:hover{
-
+  }
+  
+  .elemento__piedecuesta {
+    transition: transform 0.5s ease;
+  }
+  
+  .elemento__piedecuesta:hover {
+    transform: skewY(15deg);
+  }
+  
+  .section--normal-invertida3 {
+    background-color: var(--color-5);
+  }
+  
+  .section--normal-invertida3:hover {
     background-color: var(--color-1);
     color: var(--color-7);
-}
-
-
-.section_section--invertida2{
-
+    border-radius: 70px;
+  }
+  
+  .section--invertida2 {
     background-color: var(--color-4);
     color: var(--color-1);
     transition: border 0.5s ease;
-}
-
-.section_section--invertida2:hover{
-
-background-color: var(--color-6);
-color: black;
-border: 2px solid red;
-
-}
-.section_normal{
-
-
+  }
+  
+  .section--invertida2:hover {
+    background-color: var(--color-6);
+    color: black;
+    border: 2px solid red;
+    border-radius: 70px;
+  }
+  
+  .section--normal {
     background-color: var(--color-1);
     color: var(--color-7);
     transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.section_normal:hover{
-
-background-color: var(--color-5);
-color: black;
-opacity: 0.8;
-transform: scale(1.05);
-
-}
-.section--invertida {
+    border-top: none;
+  }
+  
+  .section--normal:hover {
+    background-color: var(--color-5);
+    color: black;
+    opacity: 0.8;
+    transform: scale(1.05);
+    border-radius: 70px;
+  }
+  
+  .section--invertida {
     background-color: var(--color-6);
     transition: text-shadow 0.5s ease;
-
-}
-.section--invertida:hover{
-
+  }
+  
+  .section--invertida:hover {
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     background-color: var(--color-4);
     color: var(--color-1);
-}
+    border-radius: 70px;
+  }
+  
+  .section__p--negro {
+    color: black;
+  }
+  
